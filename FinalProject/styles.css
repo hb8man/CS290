@@ -4,6 +4,10 @@ body {
     text-align: center;
 }
 
+.classReqs {
+    padding-top: 100; 
+}
+
 .modal {
     display: none; 
     position: fixed; 
@@ -40,9 +44,11 @@ body {
 .correct {
     background-color: green;
     color: white;
+    padding: 5;
 }
 
 .incorrect {
     background-color: red;
     color: white;
+    padding: 5;
 }
