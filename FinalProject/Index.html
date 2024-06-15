@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Trivia Game Setup</h1>
+    <form id="triviaSetup">
+        <label for="category">Choose a category:</label>
+        <select id="category">
+            <option value="9">General Knowledge</option>
+            <option value="11">Entertainment: Film</option>
+            <option value="12">Entertainment: Music</option>
+            <option value="17">Science & Nature</option>
+            <option value="21">Sports</option>
+        </select>
+
+        <label for="difficulty">Select difficulty:</label>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+
+        <button type="submit">Start</button>
+    </form>
+
+    <!-- Modal Structure for Trivia Game -->
+    <div id="triviaModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="scoreDisplay">Score: 0</div>  <!-- Score display area -->
+            <div id="questionContainer"></div>
+            <div id="answers"></div>
+            <div id="nextButtonContainer">
+                <button id="nextButton" style="display:none;">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
